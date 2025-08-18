@@ -4,7 +4,7 @@ Overview
 My process
     I started by writing all the structure. First a main where I stored all the content. Then one div which contains the img of the QR Code and another div that contains the text.
 
-    To style it, I started applying the general style of the page, by styling the ""<body>
+    To style it, I started applying the general style of the page, by styling the body
     This was just the background color and the font
 
     I continued styling the page container div, I gave it a flex display so I could align it considering the main content. And I gave it a maximum height of the full viewport so it doesn't shrink when the viewport gets smaller.
