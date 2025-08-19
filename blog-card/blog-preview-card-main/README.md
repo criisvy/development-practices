@@ -1,0 +1,1 @@
+It was a really interesting exercise. The challenges that I faced where building well the layout and making everything centered. Also adding two shadows.
