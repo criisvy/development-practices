@@ -3,14 +3,17 @@
 *::after {
   box-sizing: border-box;
 }
+
 * {
   margin: 0;
 }
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     interpolate-size: allow-keywords;
   }
 }
+
 body {
   line-height: 1.5;
 
@@ -46,6 +49,7 @@ h6 {
 p {
   text-wrap: pretty;
 }
+
 h1,
 h2,
 h3,
@@ -75,6 +79,10 @@ body {
   align-items: center;
 }
 
+.main-wrapper {
+  padding-top: 30px;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -86,11 +94,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 500px;
 }
 
-.titles > p {
-  width: 360px;
+.description {
   text-align: center;
+  margin-top: 16px;
 }
 
 .first-title {
@@ -107,6 +116,17 @@ body {
   display: flex;
   flex-direction: column;
   gap: 38px;
+}
+
+.card {
+  border-radius: 4px;
+  box-shadow: 0px 14px 16px 2px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  padding-bottom: 40px;
+  width: 360px;
+  border-top: solid;
 }
 
 .inside-cards {
@@ -126,78 +146,54 @@ body {
   border-color: var(--cyan);
 }
 
-.supervisor-card > p {
+.supervisor-card>p {
   color: var(--gray500);
 }
-.supervisor-card > img {
-  width: 55px;
-  display: block;
-  margin-left: auto;
-}
+
+
 
 .team-builder-card {
-  border-radius: 4px;
-  box-shadow: 0px 14px 16px 2px rgba(0, 0, 0, 0.15);
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-  width: 360px;
-  border-top: solid;
   border-color: var(--red);
 }
 
-.team-builder-card > p {
+.team-builder-card>p {
   color: var(--gray500);
 }
-.team-builder-card > img {
-  width: 55px;
-  display: block;
-  margin-left: auto;
-}
+
 .karma-card {
-  border-radius: 4px;
-  box-shadow: 0px 14px 16px 2px rgba(0, 0, 0, 0.15);
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-  width: 360px;
-  border-top: solid;
   border-color: var(--orange);
 }
 
-.karma-card > p {
+.karma-card>p {
   color: var(--gray500);
 }
-.karma-card > img {
-  width: 55px;
-  display: block;
-  margin-left: auto;
-}
+
 .calculator-card {
-  border-radius: 4px;
-  box-shadow: 0px 14px 16px 2px rgba(0, 0, 0, 0.15);
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-  width: 360px;
-  border-top: solid;
   border-color: var(--blue);
 }
 
-.calculator-card > p {
+.calculator-card>p {
   color: var(--gray500);
 }
-.calculator-card > img {
+
+.card-image {
   width: 55px;
+  display: block;
+  margin-left: auto;
+  margin-top: 30px;
 }
 
 @media (min-width: 1100px) {
   .cards {
     display: flex;
     flex-direction: row;
-    width: 360px;
     align-items: center;
   }
+
+  .main-wrapper {
+    padding-top: 200px;
+  }
+
   .inside-cards {
     display: flex;
     flex-direction: column;
